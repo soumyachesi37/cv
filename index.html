@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>SSD</title>
+</head>
+<body>
+    <!-- Home -->
+    <div class="home">
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href = "#About">About</a></li>
+                    <li><a href = "#">Services</a></li>
+                    <li><a href = "#">My Github</a></li>
+                    <li><a href = "#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="intro">
+            <h1>Hi, I'm Soumya</h1>
+        </div>
+        <div class="php">
+            <img src="img/me.png">
+        </div>
+    </div>
+    <!-- About -->
+    <section id = "About">
+        <div class="about">
+            <div class="about-heading">
+                <h1>About</h1>
+            </div>
+            <div class="about-text">
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut accusantium distinctio nobis ducimus suscipit aliquam laudantium veniam veritatis exercitationem quas, delectus unde, repellendus nam earum repellat cumque fugit possimus mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae quo non pariatur a aspernatur dignissimos optio necessitatibus, veritatis eveniet tempore nobis dolor qui odit velit, voluptas commodi tenetur recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem autem dolor laborum deleniti id temporibus. Consequatur quae eveniet aspernatur adipisci, reprehenderit, labore porro, perspiciatis hic vel tempora facere obcaecati!
+                </h3>
+            </div>
+            <div class="about-buttons-container">
+                <nav>
+                    <ul>
+                        <li><button class ="about-buttons" id = "b_skills" onclick="display_skills()">Skills</a></li>
+                        <li><button class ="about-buttons" id = "b_education" onclick="display_education()">Education</a></li>
+                        <li><button class ="about-buttons" id = "b_experience" onclick="display_experience()">Experience</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="skills-div-container" class="skills-div-container">
+                <table>
+                    <tr>
+                        <td><img src="img/c.png"><div class="progress-bar-container">
+                            <div class="progress-bar3"></div>
+                        </td>
+                        <td><img src="img/arduino.png"><div class="progress-bar-container">
+                            <div class="progress-bar3"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/js.png"><div class="progress-bar-container">
+                            <div class="progress-bar2"></div>
+                        </td>
+                        <td><img src="img/css.png"><div class="progress-bar-container">
+                            <div class="progress-bar2"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/redhat.png"><div class="progress-bar-container">
+                            <div class="progress-bar2"></div>
+                        </td>
+                        <td><img src="img/python.png"><div class="progress-bar-container">
+                            <div class="progress-bar2"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/tensor_flow.png"><div class="progress-bar-container">
+                            <div class="progress-bar1"></div>
+                        </td>
+                        <td><img src="img/cirq.png"><div class="progress-bar-container">
+                            <div class="progress-bar1"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="education-div-container" class="education-div-container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://springdalehighschool.com/">Springdale High School (HS), Kalyani</a>
+                            <ul class = "edu-inner-list1">
+                                Science Major
+                            </ul>
+                            <ul class = "edu-inner-list2">
+                                <li>Madhyamik - </li>
+                                <li>Higher Secondary - </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.technoindiauniversity.ac.in/">Techno India University, Kolkata</a>
+                            <ul class = "edu-inner-list1">
+                                BTech in Computer Science
+                            </ul>
+                            <ul class = "edu-inner-list2">
+                                <li>CGPA - </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

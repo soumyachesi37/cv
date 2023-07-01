@@ -1,0 +1,248 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Titillium Web', sans-serif;
+}
+.home{
+  position: relative;
+  height: 100vh;
+}
+.header {
+  position: absolute;
+  width: 100%;
+}
+.php {
+  position: absolute;
+  right: 0;
+  width: 50%; 
+  height: 100%; 
+  display: flex;
+  align-items: center; 
+  
+}
+.php img {
+  margin-top: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  filter: drop-shadow(20px 0px 20px rgb(71, 68, 68));
+}
+.intro{
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+.intro h1{
+  
+  animation: slide-in 2s ease-out forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.header nav ul li{
+  display: inline-block;
+  margin: 10px 20px; 
+}
+.header nav ul li a{
+  
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+/* About */
+.about{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.about-heading{
+  margin-left: 5%;
+}
+.about-text{
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 50%;
+  font-size: 50;
+  text-align: justify;
+  line-height: 1.8;
+}
+.about-buttons-container
+{
+  position: absolute;
+  width: 100%;
+}
+.about-buttons-container nav ul {
+  display: flex;
+  justify-content: right;
+  margin-right: 5%;
+}
+.about-buttons-container nav ul li{
+  display: inline-block;
+  margin: 0px 40px; 
+}
+.about-buttons-container nav ul li button {
+  font-family: 'Titillium Web', sans-serif;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+@keyframes button-animation {
+  0% { width: 0%;
+    transform: scale(1); }
+  50% { transform: scale(1.2); 
+  width: 70%;}
+  100% { width: 100%;
+    transform: scale(1); }
+}
+.about-buttons-container nav ul li button.pressed{
+  border-bottom: 2px solid rgb(68, 27, 253);
+  animation: button-animation 0.3s linear;
+}
+
+.skills-div-container{
+  position: absolute;
+  display: none;
+  max-height: 100vh;
+  margin-left: 50%;
+  margin-top: 5%;
+}
+
+.skills-div-container td{
+  height: 70px;
+  width: 250px;
+}
+
+.skills-div-container nav ul li{
+  display: inline-block;
+}
+
+.skills-div-container img{
+  margin-left: 58%;
+  max-width: 20%;
+  filter: drop-shadow(5px 2px 5px rgb(71, 68, 68));
+  animation: slide-in 1s ease-out forwards;
+}
+/* 
+.left_skills, .right_skills{
+  display: inline-block;
+  width: 49%;
+}
+.right_skills{
+  display: inline-block;
+  width: 49%;
+} */
+
+.progress-bar-container {
+  margin-top: 20px;
+  margin-left: 30px;
+  position: absolute;
+  display: inline-block;
+  height: 15px;
+  width: 25%;
+  border-radius: 10px;
+  /* filter: drop-shadow(5px 2px 5px rgb(71, 68, 68)); */
+  animation: slide-up 1s ease-out forwards;
+}
+
+.progress-bar3,.progress-bar2,.progress-bar1{
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), black);
+}
+
+.progress-bar3{
+  width: 75%;
+  animation: progress-bar-animation3 2s ease-out;
+}
+.progress-bar2{
+  width: 50%;
+  animation: progress-bar-animation2 2s ease-out;
+}
+.progress-bar1{
+  width: 20%;
+  animation: progress-bar-animation1 2s ease-out;
+}
+
+@keyframes progress-bar-animation3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes progress-bar-animation2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes progress-bar-animation1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.education-div-container{
+  margin-top: 5%;
+  margin-left: 60%;
+  position: absolute;
+  display: none;
+}
+
+.education-div-container nav ul li{
+  display: inline-block;
+  margin-bottom: 30px;
+  
+}
+.education-div-container a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  animation: slide-in 1s ease-out forwards;
+}
+
+.edu-inner-list1{
+  text-align: right;
+}
+
+.edu-inner-list2{
+  padding-left: 0px;
+}
+.edu-inner-list2 li{
+  display: inline-block;
+  margin: 20px 20px; 
+  color: black;
+  animation: slide-in 1s ease-out forwards;
+}
